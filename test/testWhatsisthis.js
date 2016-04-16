@@ -1,2 +1,2 @@
-var whatsisthis = require("./app/whatsinthis");
+var whatsisthis = require("../app/whatsinthis");
 whatsisthis.go();
