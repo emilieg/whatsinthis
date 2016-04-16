@@ -9,7 +9,10 @@ var Firebase = require('../models/Firebase');
 exports.go = function() {
     // build your api calls here
 
-    var url = "http://toxgate.nlm.nih.gov/cgi-bin/sis/search2/x?dbs+<db>:<keyword>";
+    //var key = "whatevery key"
+    //var url = "http://toxgate.nlm.nih.gov/cgi-bin/sis/search2/x?dbs+<db>:<keyword>?key=" + key;
+    //
+    var url = "http://www.google.com"
     console.log("testing api calls");
 
     return new Promise(function (resolve, reject) {
@@ -17,6 +20,7 @@ exports.go = function() {
             if (error) {
                 reject(error);
             }
+            console.log(response);
         })
     })
 }
