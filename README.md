@@ -1,1 +1,4 @@
 # whatsinthis
+
+npm install
+
