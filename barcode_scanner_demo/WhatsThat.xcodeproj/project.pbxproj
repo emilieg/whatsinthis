@@ -28,14 +28,14 @@
 
 /* Begin PBXFileReference section */
 		10E5D43B1CC310E100D84DBF /* WhatsInThisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsInThisViewController.swift; sourceTree = "<group>"; };
-		A2F4248D1A8E839400E83440 /* Barcode Scanner Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barcode Scanner Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F4248D1A8E839400E83440 /* WhatsThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F424911A8E839400E83440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2F424921A8E839400E83440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2F424941A8E839400E83440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2F424971A8E839400E83440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2F424991A8E839400E83440 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2F4249C1A8E839400E83440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A2F424A21A8E839400E83440 /* Barcode Scanner DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barcode Scanner DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F424A21A8E839400E83440 /* WhatsThat.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsThat.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F424A71A8E839400E83440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2F424A81A8E839400E83440 /* Barcode_Scanner_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode_Scanner_DemoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 		A2F4248E1A8E839400E83440 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2F4248D1A8E839400E83440 /* Barcode Scanner Demo.app */,
-				A2F424A21A8E839400E83440 /* Barcode Scanner DemoTests.xctest */,
+				A2F4248D1A8E839400E83440 /* WhatsThat.app */,
+				A2F424A21A8E839400E83440 /* WhatsThat.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2F4248C1A8E839400E83440 /* Barcode Scanner Demo */ = {
+		A2F4248C1A8E839400E83440 /* WhatsThat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2F424AC1A8E839400E83440 /* Build configuration list for PBXNativeTarget "Barcode Scanner Demo" */;
+			buildConfigurationList = A2F424AC1A8E839400E83440 /* Build configuration list for PBXNativeTarget "WhatsThat" */;
 			buildPhases = (
 				A2F424891A8E839400E83440 /* Sources */,
 				A2F4248A1A8E839400E83440 /* Frameworks */,
@@ -130,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = "Barcode Scanner Demo";
+			name = WhatsThat;
 			productName = "Barcode Scanner Demo";
-			productReference = A2F4248D1A8E839400E83440 /* Barcode Scanner Demo.app */;
+			productReference = A2F4248D1A8E839400E83440 /* WhatsThat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2F424A11A8E839400E83440 /* Barcode Scanner DemoTests */ = {
+		A2F424A11A8E839400E83440 /* WhatsThatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2F424AF1A8E839400E83440 /* Build configuration list for PBXNativeTarget "Barcode Scanner DemoTests" */;
+			buildConfigurationList = A2F424AF1A8E839400E83440 /* Build configuration list for PBXNativeTarget "WhatsThatTests" */;
 			buildPhases = (
 				A2F4249E1A8E839400E83440 /* Sources */,
 				A2F4249F1A8E839400E83440 /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				A2F424A41A8E839400E83440 /* PBXTargetDependency */,
 			);
-			name = "Barcode Scanner DemoTests";
+			name = WhatsThatTests;
 			productName = "Barcode Scanner DemoTests";
-			productReference = A2F424A21A8E839400E83440 /* Barcode Scanner DemoTests.xctest */;
+			productReference = A2F424A21A8E839400E83440 /* WhatsThat.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 				TargetAttributes = {
 					A2F4248C1A8E839400E83440 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = P8TJ6L5V9T;
+						DevelopmentTeam = HW63VH4398;
 					};
 					A2F424A11A8E839400E83440 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -174,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A2F424881A8E839400E83440 /* Build configuration list for PBXProject "Barcode Scanner Demo" */;
+			buildConfigurationList = A2F424881A8E839400E83440 /* Build configuration list for PBXProject "WhatsThat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,8 +187,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2F4248C1A8E839400E83440 /* Barcode Scanner Demo */,
-				A2F424A11A8E839400E83440 /* Barcode Scanner DemoTests */,
+				A2F4248C1A8E839400E83440 /* WhatsThat */,
+				A2F424A11A8E839400E83440 /* WhatsThatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,7 +237,7 @@
 /* Begin PBXTargetDependency section */
 		A2F424A41A8E839400E83440 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2F4248C1A8E839400E83440 /* Barcode Scanner Demo */;
+			target = A2F4248C1A8E839400E83440 /* WhatsThat */;
 			targetProxy = A2F424A31A8E839400E83440 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -350,8 +350,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Barcode Scanner Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bowst.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.WhatsThis;
+				PRODUCT_NAME = WhatsThat;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -364,8 +364,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Barcode Scanner Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bowst.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawmicha.WhatsThis;
+				PRODUCT_NAME = WhatsThat;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -385,8 +385,8 @@
 				INFOPLIST_FILE = "Barcode Scanner DemoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bowst.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barcode Scanner Demo.app/Barcode Scanner Demo";
+				PRODUCT_NAME = WhatsThat;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsThat.app/WhatsThat";
 			};
 			name = Debug;
 		};
@@ -401,15 +401,15 @@
 				INFOPLIST_FILE = "Barcode Scanner DemoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bowst.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barcode Scanner Demo.app/Barcode Scanner Demo";
+				PRODUCT_NAME = WhatsThat;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsThat.app/WhatsThat";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2F424881A8E839400E83440 /* Build configuration list for PBXProject "Barcode Scanner Demo" */ = {
+		A2F424881A8E839400E83440 /* Build configuration list for PBXProject "WhatsThat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2F424AA1A8E839400E83440 /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2F424AC1A8E839400E83440 /* Build configuration list for PBXNativeTarget "Barcode Scanner Demo" */ = {
+		A2F424AC1A8E839400E83440 /* Build configuration list for PBXNativeTarget "WhatsThat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2F424AD1A8E839400E83440 /* Debug */,
@@ -427,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2F424AF1A8E839400E83440 /* Build configuration list for PBXNativeTarget "Barcode Scanner DemoTests" */ = {
+		A2F424AF1A8E839400E83440 /* Build configuration list for PBXNativeTarget "WhatsThatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2F424B01A8E839400E83440 /* Debug */,

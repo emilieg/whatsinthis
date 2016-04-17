@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A2F4248C1A8E839400E83440"
-               BuildableName = "Barcode Scanner Demo.app"
-               BlueprintName = "Barcode Scanner Demo"
-               ReferencedContainer = "container:Barcode Scanner Demo.xcodeproj">
+               BuildableName = "WhatsThat.app"
+               BlueprintName = "WhatsThat"
+               ReferencedContainer = "container:WhatsThat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A2F424A11A8E839400E83440"
-               BuildableName = "Barcode Scanner DemoTests.xctest"
-               BlueprintName = "Barcode Scanner DemoTests"
-               ReferencedContainer = "container:Barcode Scanner Demo.xcodeproj">
+               BuildableName = "WhatsThat.xctest"
+               BlueprintName = "WhatsThatTests"
+               ReferencedContainer = "container:WhatsThat.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2F4248C1A8E839400E83440"
-            BuildableName = "Barcode Scanner Demo.app"
-            BlueprintName = "Barcode Scanner Demo"
-            ReferencedContainer = "container:Barcode Scanner Demo.xcodeproj">
+            BuildableName = "WhatsThat.app"
+            BlueprintName = "WhatsThat"
+            ReferencedContainer = "container:WhatsThat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2F4248C1A8E839400E83440"
-            BuildableName = "Barcode Scanner Demo.app"
-            BlueprintName = "Barcode Scanner Demo"
-            ReferencedContainer = "container:Barcode Scanner Demo.xcodeproj">
+            BuildableName = "WhatsThat.app"
+            BlueprintName = "WhatsThat"
+            ReferencedContainer = "container:WhatsThat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2F4248C1A8E839400E83440"
-            BuildableName = "Barcode Scanner Demo.app"
-            BlueprintName = "Barcode Scanner Demo"
-            ReferencedContainer = "container:Barcode Scanner Demo.xcodeproj">
+            BuildableName = "WhatsThat.app"
+            BlueprintName = "WhatsThat"
+            ReferencedContainer = "container:WhatsThat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

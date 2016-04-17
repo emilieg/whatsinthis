@@ -1,0 +1,10 @@
+chmod 400 <pem file>
+
+then run ./connect.sh
+
+once ur in the machine
+
+cd whatsisthis
+git pull
+./stop
+./start

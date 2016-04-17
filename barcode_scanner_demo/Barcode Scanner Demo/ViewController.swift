@@ -60,7 +60,18 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
         // Start the scanner. You'll have to end it yourself later.
         session.startRunning()
+        
+        //hide navigation bar
     }
+    override func viewDidAppear(animated: Bool) {
+        print("viewDidAppear")
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewWillDisappear(animated: Bool) {
+        print("viewWIllDisappear")
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
 
     // This is called when we find a known barcode type with the camera.
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
