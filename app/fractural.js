@@ -36,6 +36,7 @@ exports.go = function() {
         var product_name = res.data[0].product_name;
 
         console.log(product_name);
+        res.render('product', {Products: brand});
 });
 
 

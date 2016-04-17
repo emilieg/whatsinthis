@@ -3,6 +3,9 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var app = express();
 const fs = require('fs');
+var ejsLayouts = require("express-ejs-layouts");
+app.use(ejsLayouts);
+
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
