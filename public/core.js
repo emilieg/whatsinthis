@@ -9,6 +9,8 @@ function mainController($scope, $http, $location) {
 
     //var upc = 611269357011;
 
+    $scope.title = hash;
+
     // when landing on the page, get all todos and show them
     $http.get('/api?id=' + hash)
         .success(function(data) {
