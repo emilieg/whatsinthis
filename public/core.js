@@ -7,7 +7,7 @@ function mainController($scope, $http) {
     var upc = 611269357011;
 
     // when landing on the page, get all todos and show them
-    $http.get('/api/' + upc)
+    $http.get('/api?id=' + upc)
         .success(function(data) {
             $scope.todos = data;
             console.log(data);
