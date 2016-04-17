@@ -32,7 +32,7 @@ exports.go = function() {
 
     function definitions(ingredients) {
         ingredients.forEach(function(i) {
-            console.log(foodData.data[i.toLower()].def)
+            console.log(foodData.data[i.toLowerCase()].def)
         });
     } 
 
