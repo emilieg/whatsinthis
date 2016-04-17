@@ -13,10 +13,13 @@ router.use(function(req, res, next) {
 router.get('/', function(req, res) {
     var query = req.query;
     console.log(query);
-    res.json({ message: 'firebase!', queryString: query });
+    //res.json({ message: 'firebase!', queryString: query });
 
     var id = query.id;
-    fractural.getData(id);
+    fractural.getData(id).then(function(result){
+        console.log("ok.." + result);
+        res.send(result);
+    });
 });
 
 // example 2

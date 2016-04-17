@@ -9,9 +9,10 @@ var foodData = require('../models/food-data');
 
 function definitions(ingredients) {
     ingredients.forEach(function(i) {
-        var def = foodData.data[i.toLowerCase()].def;
-        if (!def) {
-            console.log(def);
+        console.log(i.toLowerCase());
+        var data = foodData.data[i.toLowerCase()];
+        if (data){
+            console.log(data.def);
         }
     });
 }
@@ -58,14 +59,28 @@ exports.go = function() {
 
 exports.getData = function(id) {
     console.log("getting data for " + id);
-    factual.get('/t/products-cpg-nutrition?q=' + id, function (error, res) {
-        var ingredients = res.data[0].ingredients;
-        var brand = res.data[0].brand;
-        var category = res.data[0].category;
-        var image_urls = res.data[0].image_urls[0];
-        var product_name = res.data[0].product_name;
 
-        console.log(product_name);
-        console.log(definitions(ingredients));
+    return new Promise (function(resolve, reject){
+        factual.get('/t/products-cpg-nutrition?q=' + id, function (error, res) {
+            var ingredients = res.data[0].ingredients;
+            var brand = res.data[0].brand;
+            var category = res.data[0].category;
+            var image_urls = res.data[0].image_urls[0];
+            var product_name = res.data[0].product_name;
+
+            //console.log(product_name);
+            //console.log(definitions(ingredients));
+
+            resolve({
+                ingredients: ingredients,
+                brand: brand,
+                category: category,
+                image_urls: image_urls,
+                product_name: product_name,
+                ingredientToInfoMapping: foodData
+            });
+
+        });
     });
+
 }
