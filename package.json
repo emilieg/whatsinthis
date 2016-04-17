@@ -15,11 +15,8 @@
     "cheerio": "^0.20.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-<<<<<<< HEAD
     "express-ejs-layouts": "^2.1.0",
-=======
     "factual-api": "^1.0.7",
->>>>>>> e664b240ce1deac0a85824dd28adad85d3c808ac
     "firebase": "^2.4.2",
     "gm": "^1.21.1",
     "lodash": "^4.3.0",
