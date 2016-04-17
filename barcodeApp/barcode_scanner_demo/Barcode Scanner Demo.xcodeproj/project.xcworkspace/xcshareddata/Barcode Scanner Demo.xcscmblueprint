@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "81ECD5D3AB71B3811296E5C23E6718C58BBA5914",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D441F1DF57F6EC20186B4E03C45F42DDC36FA5F3" : 0,
+    "81ECD5D3AB71B3811296E5C23E6718C58BBA5914" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EC38D67E-3954-44E5-AEED-EF67EC303863",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D441F1DF57F6EC20186B4E03C45F42DDC36FA5F3" : "..",
+    "81ECD5D3AB71B3811296E5C23E6718C58BBA5914" : "barcode_scanner_demo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Barcode Scanner Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Barcode Scanner Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bowst\/barcode_scanner_demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81ECD5D3AB71B3811296E5C23E6718C58BBA5914"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lawmicha\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D441F1DF57F6EC20186B4E03C45F42DDC36FA5F3"
+    }
+  ]
+}
