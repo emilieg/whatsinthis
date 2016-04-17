@@ -3,15 +3,13 @@ var scotchTodo = angular.module('scotchTodo', []);
 
 function mainController($scope, $http, $location) {
     $scope.formData = {};
-
-    var hash = $location.hash();
-    console.log(hash);
-
     //var upc = 611269357011;
 
-    $scope.title = hash;
-    var path = $location.path();
-    console.log(path)
+    var absUrl = $location.absUrl();
+    console.log(absUrl);
+    var productCode = absUrl.split("/");
+    console.log(productCode[productCode.length-1]);
+
     // when landing on the page, get all todos and show them
     $http.get('/api?id=' + hash)
         .success(function(data) {
