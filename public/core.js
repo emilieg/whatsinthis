@@ -31,6 +31,7 @@ function mainController($scope, $http, $location) {
             $scope.category = data.category;
             $scope.product_name = data.product_name;
             $scope.brand = data.brand;
+            $scope.image_urls = data.image_urls;
             //$scope.ingredients = [];
             var panelIngredients = [];
             for (var i = 0, len = data.ingredients.length; i< len; i++) {

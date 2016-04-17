@@ -34,7 +34,7 @@
 <body ng-controller="mainController">
   <div class="container header">
     <div id="product-image" align="center">
-      <img src="http://web.cs.ucla.edu/~feisha/img/personal/awards100x100.png" class="img-thumbnail">
+      <img ng-src="{{image_urls}}" class="img-thumbnail">
       <h3>{{product_name}}</h3>
     </div>
   </div>
@@ -46,8 +46,6 @@
  -->
       <div class="container">
         <div class="ingredients">
-
-
           <div class="panel panel-default" ng-repeat="element in ingredients">
             <div class="panel-heading">{{element.name}}
               <span class="glyphicon glyphicon-chevron-down pull-right" ng-click="element.isCollapsed = !element.isCollapsed"></span>
