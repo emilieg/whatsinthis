@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100AF5A71CC4164700A1D317 /* WHATSTHAT-LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 100AF5A61CC4164700A1D317 /* WHATSTHAT-LOGO.png */; };
 		10E5D43C1CC310E100D84DBF /* WhatsInThisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5D43B1CC310E100D84DBF /* WhatsInThisViewController.swift */; };
 		A2F424931A8E839400E83440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F424921A8E839400E83440 /* AppDelegate.swift */; };
 		A2F424951A8E839400E83440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F424941A8E839400E83440 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		100AF5A61CC4164700A1D317 /* WHATSTHAT-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WHATSTHAT-LOGO.png"; sourceTree = "<group>"; };
 		10E5D43B1CC310E100D84DBF /* WhatsInThisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsInThisViewController.swift; sourceTree = "<group>"; };
 		A2F4248D1A8E839400E83440 /* WhatsThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F424911A8E839400E83440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		A2F424841A8E839400E83440 = {
 			isa = PBXGroup;
 			children = (
+				100AF5A61CC4164700A1D317 /* WHATSTHAT-LOGO.png */,
 				A2F4248F1A8E839400E83440 /* Barcode Scanner Demo */,
 				A2F424A51A8E839400E83440 /* Barcode Scanner DemoTests */,
 				A2F4248E1A8E839400E83440 /* Products */,
@@ -166,7 +169,7 @@
 				TargetAttributes = {
 					A2F4248C1A8E839400E83440 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = HW63VH4398;
+						DevelopmentTeam = H39A428Q3T;
 					};
 					A2F424A11A8E839400E83440 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100AF5A71CC4164700A1D317 /* WHATSTHAT-LOGO.png in Resources */,
 				A2F424981A8E839400E83440 /* Main.storyboard in Resources */,
 				A2F4249D1A8E839400E83440 /* LaunchScreen.xib in Resources */,
 				A2F4249A1A8E839400E83440 /* Images.xcassets in Resources */,

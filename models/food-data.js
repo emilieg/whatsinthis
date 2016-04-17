@@ -1,6 +1,6 @@
 exports.data = {
   // Red Bull
-  "Carbonated water": {
+  "Carbonated Water": {
     def: "Water that has been pressurized with carbon dioxide",
     moreinfo: null
   },
