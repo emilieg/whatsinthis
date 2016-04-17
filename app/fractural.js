@@ -26,9 +26,16 @@ exports.go = function() {
     //         return JSON.parse(body);
     //     })
     // })
+    var upc = 611269357011; 
 
-    factual.get('/t/products-cpg-nutrition?q=yoplait', function (error, res) {
-        console.log(res.data[0].ingredients);
+    factual.get('/t/products-cpg-nutrition?q=' + upc, function (error, res) {
+        var ingredients = res.data[0].ingredients;
+        var brand = res.data[0].brand;
+        var category = res.data[0].category;
+        var image_urls = res.data[0].image_urls[0];
+        var product_name = res.data[0].product_name;
+
+        console.log(product_name);
 });
 
 
