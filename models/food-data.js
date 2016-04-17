@@ -54,5 +54,37 @@ exports.data = {
       "Glucuronolactone" : {
         def: "Definition",
         moreinfo: null
+    },
+    "Caramel Color" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Aspartame" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Phosphoric Acid" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Potassium Benzoate (To Protect Taste)" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Natural Flavors" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Citric Acid" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Caffeine": {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Phenylketonurics: Contains Phenylalanine": {
+        def: "Definition",
+        moreinfo: null
     }
   }
