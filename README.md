@@ -10,3 +10,14 @@ curl localhost:3000/
 
 --
 
+
+## heroku deployment
+
+heroku login
+
+heroku create
+
+git push heroku master
+
+heroku ps:scale web=1
+
