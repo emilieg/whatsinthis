@@ -1,8 +1,26 @@
 body {
-  background-color: lightblue;
+  background-color: #f2f2f2;
+  color: #fff;
+  padding: 0px !important;
 }
-
-
-h1 {
+h2 {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  height: 200px;
+  background-color: #3498db;
+}
+#product-image img{
+  margin-top: 10px;
+}
+.ingredients {
+  margin-top: 20px;
+}
+.ingredients-heading {
+  background-color: #34495e !important;
+  color: #fff !important;
+}
+.ingredients-body {
+  color: #333 !important;
 }
