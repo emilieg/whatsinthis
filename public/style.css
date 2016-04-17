@@ -24,3 +24,6 @@ h2 {
 .ingredients-body {
   color: #333 !important;
 }
+.panel-default>.panel-heading {
+  background-color: #fff;
+ }

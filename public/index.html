@@ -25,9 +25,6 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="core.js"></script>
-  <script type="text/javascript">
-    $('.collapse').collapse();
-  </script>
 
 </head>
 <!-- SET THE CONTROLLER AND GET ALL TODOS -->
@@ -56,19 +53,44 @@
       </ul>
     </div>
 
+    <!-- Panel-Collapse -->
     <div class="panel-group">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a data-target="#collapse1" data-toggle="collapse" href="">Collapsible panel test</a>
+            <a data-target="#collapse1" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
           </h4>
         </div>
         <div id="collapse1" class="panel-collapse collapse">
           <div class="panel-body">Panel Body</div>
-          <div class="panel-footer">Panel Footer</div>
         </div>
       </div>
     </div>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-target="#collapse2" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Panel Body</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-target="#collapse3" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Panel Body</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
