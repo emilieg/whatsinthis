@@ -11,7 +11,9 @@
   <title>Node/Angular Todo App</title>
 
   <!-- SCROLLS -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+  <link rel="stylesheet" href="style.css">
   <style>
     html                    { overflow-y:scroll; }
     body                    { padding-top:50px; }
@@ -21,58 +23,98 @@
   <!-- SPELLS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="core.js"></script>
 
 </head>
 <!-- SET THE CONTROLLER AND GET ALL TODOS -->
 <body ng-controller="mainController">
-<div class="container">
-
-  <!-- HEADER AND TODO COUNT -->
-  <div class="jumbotron text-center">
-    <h1>I'm a Todo-aholic <span class="label label-info">{{ todos.length }}</span></h1>
+<div class="container header">
+  <div id="product-image" align="center">
+    <img src="http://web.cs.ucla.edu/~feisha/img/personal/awards100x100.png" class="img-thumbnail">
+    <h2>Red Bull</h2>
   </div>
+</div>
+
+<<<<<<< HEAD
 
 
 
 
 
-
-  <div>{{category}}</div>
+  <div>Category: {{category}}</div>
 
   <!-- TODO LIST -->
   <div id="todo-list" class="row">
     <div class="col-sm-4 col-sm-offset-4">
 
-    <div>{{product_name}}</div>
-    <div>{{brand}}</div>
+    <div>Product: {{product_name}}</div>
+    <div>Brand: {{brand}}</div>
 
       <!-- LOOP OVER THE TODOS IN $scope.todos -->
-      <div class="checkbox" ng-repeat="ingredient in ingredients">
+<!--       <div class="checkbox" ng-repeat="ingredient in ingredients">
 
       <div>{{ingredient}}</div>
     
-      </div>
+      </div> -->
+=======
+<div class="container">
+  <div class="ingredients">
+    <div class="panel panel-default">
+    <!-- Default panel contents -->
+      <div class="panel-heading ingredients-heading">Ingredients</div>
 
+>>>>>>> d35959a5e3381ae397bf72a36a6649d40a052f5f
+
+      <!-- List group -->
+      <ul class="list-group ingredients-body">
+        <li class="list-group-item" ng-repeat="ingredient in ingredients">{{ingredient}}<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+        <!-- <li class="list-group-item">Sucrose <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+        <li class="list-group-item">Glucose <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+        <li class="list-group-item">Citric Acid <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
+        <li class="list-group-item">Taurine <span class="glyphicon glyphicon-chevron-down pull-right"></span></li> -->
+      </ul>
     </div>
-  </div>
 
-  <!-- FORM TO CREATE TODOS -->
-  <div id="todo-form" class="row">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-      <form>
-        <div class="form-group">
-
-          <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-          <input type="text" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
+    <!-- Panel-Collapse -->
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-target="#collapse1" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
+          </h4>
         </div>
-
-        <!-- createToDo() WILL CREATE NEW TODOS -->
-        <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
-      </form>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">Panel Body</div>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-target="#collapse2" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Panel Body</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-target="#collapse3" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Panel Body</div>
+        </div>
+      </div>
+    </div>
 
+  </div>
 </div>
 
 </body>
