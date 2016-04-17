@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Firebase = require('../models/Firebase');
-
+var fractural = require("./fractural");
 // this is an example of defining your routes that you are exposing
 
 router.use(function(req, res, next) {
@@ -14,6 +14,9 @@ router.get('/', function(req, res) {
     var query = req.query;
     console.log(query);
     res.json({ message: 'firebase!', queryString: query });
+
+    var id = query.id;
+    fractural.getData(id);
 });
 
 // example 2
@@ -37,5 +40,7 @@ router.route('/getDataFromStorage')
                 res.send(error);
             });
     });
+
+
 
 module.exports = router;
