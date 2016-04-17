@@ -3,6 +3,7 @@
 
 <!-- ASSIGN OUR ANGULAR MODULE -->
 <html ng-app="scotchTodo">
+<!-- <html ng-app="ui.scotchTodo"> -->
 <head>
   <!-- META -->
   <meta charset="utf-8">
@@ -25,20 +26,18 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="core.js"></script>
+<!--  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.2.js"></script> -->
 
 </head>
 <!-- SET THE CONTROLLER AND GET ALL TODOS -->
 <body ng-controller="mainController">
-<div class="container header">
-  <div id="product-image" align="center">
-    <img src="http://web.cs.ucla.edu/~feisha/img/personal/awards100x100.png" class="img-thumbnail">
-    <h2>Red Bull</h2>
+  <div class="container header">
+    <div id="product-image" align="center">
+      <img src="http://web.cs.ucla.edu/~feisha/img/personal/awards100x100.png" class="img-thumbnail">
+      <h2>Red Bull</h2>
+    </div>
   </div>
-</div>
-
-<<<<<<< HEAD
-
-
 
 
 
@@ -48,74 +47,42 @@
   <div id="todo-list" class="row">
     <div class="col-sm-4 col-sm-offset-4">
 
-    <div>Product: {{product_name}}</div>
-    <div>Brand: {{brand}}</div>
+      <div>Product: {{product_name}}</div>
+      <div>Brand: {{brand}}</div>
 
       <!-- LOOP OVER THE TODOS IN $scope.todos -->
 <!--       <div class="checkbox" ng-repeat="ingredient in ingredients">
 
-      <div>{{ingredient}}</div>
-    
-      </div> -->
-=======
+<div>{{ingredient}}</div>
+
+</div> -->
+
 <div class="container">
   <div class="ingredients">
     <div class="panel panel-default">
-    <!-- Default panel contents -->
+      <!-- Default panel contents -->
       <div class="panel-heading ingredients-heading">Ingredients</div>
 
->>>>>>> d35959a5e3381ae397bf72a36a6649d40a052f5f
 
-      <!-- List group -->
-      <ul class="list-group ingredients-body">
-        <li class="list-group-item" ng-repeat="ingredient in ingredients">{{ingredient}}<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <!-- <li class="list-group-item">Sucrose <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <li class="list-group-item">Glucose <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <li class="list-group-item">Citric Acid <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <li class="list-group-item">Taurine <span class="glyphicon glyphicon-chevron-down pull-right"></span></li> -->
-      </ul>
-    </div>
+      <!-- Panel-Collapse -->
+      <div class="panel-group" >
+        <div class="panel panel-default" ng-repeat="ingredient in ingredients">
+          <div class="panel-heading">
+            <h4 class="panel-title" >
+              <a data-target="#collapse1" data-toggle="{{ingredient}}" href="">{{ingredient}} <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+            </h4>
+          </div>
+          <div class="panel-collapse {{ingredient}}">
+            <div class="panel-body">Panel Body </div>
 
-    <!-- Panel-Collapse -->
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-target="#collapse1" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
-          </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse">
-          <div class="panel-body">Panel Body</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-target="#collapse2" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
-          </h4>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-          <div class="panel-body">Panel Body</div>
-        </div>
-      </div>
-    </div>
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-target="#collapse3" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
-          </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse">
-          <div class="panel-body">Panel Body</div>
-        </div>
-      </div>
-    </div>
 
+
+    </div>
   </div>
-</div>
+ </div> 
 
 </body>
 </html>
