@@ -7,6 +7,14 @@ var Factual = require('factual-api');
 var factual = new Factual('ucdlw2DnmCkN0BkFUNWu8tnwGYG2xsm6ySqIqAp1', 'BGYXhK0r6FpO1XXWsOgJP5qE15GjjQVJNhzgyw0x');
 var foodData = require('../models/food-data');
 
+function definitions(ingredients) {
+    ingredients.forEach(function(i) {
+        var def = foodData.data[i.toLowerCase()].def;
+        if (!def) {
+            console.log(def);
+        }
+    });
+}
 
 // use this as a way to test your api calls
 // node test/testWhatsIsThis.js will call this method
@@ -30,13 +38,6 @@ exports.go = function() {
     // })
     var upc = 611269357011;
 
-    function definitions(ingredients) {
-        ingredients.forEach(function(i) {
-        if(foodData.data[i.toLowerCase()]) {
-            console.log(foodData.data[i.toLowerCase()].def)
-        }
-        });
-    } 
 
     factual.get('/t/products-cpg-nutrition?q=' + upc, function (error, res) {
         var ingredients = res.data[0].ingredients;
@@ -51,7 +52,20 @@ exports.go = function() {
 
         console.log(definitions(ingredients));
 
-});
+    });
+}
 
 
+exports.getData = function(id) {
+    console.log("getting data for " + id);
+    factual.get('/t/products-cpg-nutrition?q=' + id, function (error, res) {
+        var ingredients = res.data[0].ingredients;
+        var brand = res.data[0].brand;
+        var category = res.data[0].category;
+        var image_urls = res.data[0].image_urls[0];
+        var product_name = res.data[0].product_name;
+
+        console.log(product_name);
+        console.log(definitions(ingredients));
+    });
 }
