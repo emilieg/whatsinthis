@@ -7,11 +7,13 @@ function mainController($scope, $http, $location) {
 
     var absUrl = $location.absUrl();
     console.log(absUrl);
-    var productCode = absUrl.split("/");
-    console.log(productCode[productCode.length-1]);
+    var productCodeArray = absUrl.split("/");
+    var productCode = productCodeArray[productCodeArray.length-1]
+
+    $scope.title = productCode;
 
     // when landing on the page, get all todos and show them
-    $http.get('/api?id=' + hash)
+    $http.get('/api?id=' + productCode)
         .success(function(data) {
             $scope.todos = data;
             console.log(data);
