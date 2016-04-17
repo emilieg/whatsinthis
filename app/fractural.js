@@ -5,6 +5,8 @@ var Promise = require('bluebird');
 var Firebase = require('../models/Firebase');
 var Factual = require('factual-api');
 var factual = new Factual('ucdlw2DnmCkN0BkFUNWu8tnwGYG2xsm6ySqIqAp1', 'BGYXhK0r6FpO1XXWsOgJP5qE15GjjQVJNhzgyw0x');
+var foodData = require('../models/food-data');
+
 
 // use this as a way to test your api calls
 // node test/testWhatsIsThis.js will call this method
@@ -26,7 +28,13 @@ exports.go = function() {
     //         return JSON.parse(body);
     //     })
     // })
-    var upc = 611269357011; 
+    var upc = 611269357011;
+
+    function definitions(ingredients) {
+        ingredients.forEach(function(i) {
+            console.log(foodData.data[i.toLower()].def)
+        });
+    } 
 
     factual.get('/t/products-cpg-nutrition?q=' + upc, function (error, res) {
         var ingredients = res.data[0].ingredients;
@@ -36,6 +44,7 @@ exports.go = function() {
         var product_name = res.data[0].product_name;
 
         console.log(product_name);
+        console.log(definitions(ingredients));
 });
 
 
