@@ -4,6 +4,8 @@ var express = require('express');
 var app = express();
 var morgan = require('morgan');
 const fs = require('fs');
+var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
+
 
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
