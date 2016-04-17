@@ -3,7 +3,7 @@ body {
   color: #fff;
   padding: 0px !important;
 }
-h2 {
+h3 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +13,10 @@ h2 {
 }
 #product-image img{
   margin-top: 10px;
+}
+#description{
+  text-align: center;
+  color: #333;
 }
 .ingredients {
   margin-top: 20px;

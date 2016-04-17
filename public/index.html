@@ -3,13 +3,13 @@
 
 <!-- ASSIGN OUR ANGULAR MODULE -->
 <html ng-app="scotchTodo">
-<!-- <html ng-app="ui.scotchTodo"> -->
+
 <head>
   <!-- META -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
 
-  <title>Node/Angular Todo App</title>
+  <title>Node/Angular What's in this?</title>
 
   <!-- SCROLLS -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -35,38 +35,31 @@
   <div class="container header">
     <div id="product-image" align="center">
       <img src="http://web.cs.ucla.edu/~feisha/img/personal/awards100x100.png" class="img-thumbnail">
-      <h2>Red Bull</h2>
+      <h3>{{product_name}}</h3>
     </div>
   </div>
 
-
-  <div>Category: {{category}}</div>
-
-  <!-- TODO LIST -->
-  <div id="todo-list" class="row">
-    <div class="col-sm-4 col-sm-offset-4">
-
-      <div>Product: {{product_name}}</div>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4" id="description">
+     <!--  <div>Category: {{category}}</div>
       <div>Brand: {{brand}}</div>
+ -->
+      <div class="container">
+        <div class="ingredients">
 
-<div class="container">
-  <div class="ingredients">
 
-
-    <div class="panel panel-default" ng-repeat="element in ingredients">
-      <div class="panel-heading">{{element.name}}
-        <span class="glyphicon glyphicon-chevron-down pull-right" ng-click="element.isCollapsed = !element.isCollapsed"></span>
+          <div class="panel panel-default" ng-repeat="element in ingredients">
+            <div class="panel-heading">{{element.name}}
+              <span class="glyphicon glyphicon-chevron-down pull-right" ng-click="element.isCollapsed = !element.isCollapsed"></span>
+            </div>
+            <div collapse="element.isCollapsed">
+              <div ng-show="!element.isCollapsed" class="panel-body" style="color:black">{{element.description.def}}</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div collapse="element.isCollapsed">
-        <div ng-show="!element.isCollapsed" class="panel-body" style="color:black">{{element.description.def}}</div>
-      </div>
-    </div>
-
-
-
-    </div>
+    </div> 
   </div>
- </div> 
 
 </body>
 </html>
