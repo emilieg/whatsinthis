@@ -1,10 +1,18 @@
-exports.data = [
-    {name: "carbonated water",
-      def: "Safe water to drink"},
-    {name: "sucrose",
-      def: "Table sugar"},
-    {name: "glucose",
-      def: "Some gross sugar"},
-    {name: "citric acid",
-      def: "Mild acid derived from citris fruit, used as preservative"} 
-  ]
+exports.data = {
+    "carbonated water": {
+      def: "Safe water to drink",
+      moreinfo: null
+    },
+    "sucrose": {
+      def: "Table sugar",
+      moreinfo: null
+    },
+    "glucose": {
+      def: "Some gross sugar",
+      moreinfo: null
+    },
+    "citric acid": {
+      def: "Mild acid derived from citris fruit, used as preservative",
+      moreinfo: null
+    }
+  }
