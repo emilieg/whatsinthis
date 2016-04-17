@@ -125,3 +125,76 @@ exports.data = {
     def: "Definition",
     moreinfo: null
   },
+    "Taurine" : {
+        def: "A colorless crystalline substance obtained from the bile of mammals",
+        moreinfo: null
+    },
+      "Caffeine" : {
+        def: "A natural stimulant derived from plants",
+        moreinfo: null
+    },
+      "Niacin" : {
+        def: "Vitamin B",
+        moreinfo: null
+    },
+       "Pyridoxine HCL" : {
+        def: "Vitamin B6",
+        moreinfo: null
+    },
+        "Vitamin b12" : {
+        def: "A vitamin that helps form red blood cells for oxygen formation",
+        moreinfo: null
+    },
+        "Artificial Flavors" : {
+        def: "Natural substances derived from animals or plants, and artificially created flavors",
+        moreinfo: null
+    },
+        "Colors" : {
+        def: "Dyes or pigments added to provide color",
+        moreinfo: null
+    },
+       "D-Pantothenol" : {
+        def: "Definition",
+        moreinfo: null
+    },
+      "Inositol" : {
+        def: "Definition",
+        moreinfo: null
+    },
+      "Glucuronolactone" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Caramel Color" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Aspartame" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Phosphoric Acid" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Potassium Benzoate (To Protect Taste)" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Natural Flavors" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Citric Acid" : {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Caffeine": {
+        def: "Definition",
+        moreinfo: null
+    },
+    "Phenylketonurics: Contains Phenylalanine": {
+        def: "Definition",
+        moreinfo: null
+    }
+  }
