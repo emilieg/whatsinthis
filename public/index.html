@@ -36,81 +36,53 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-
-
-
-
-
-  <div>Category: {{category}}</div>
-
-  <!-- TODO LIST -->
-  <div id="todo-list" class="row">
-    <div class="col-sm-4 col-sm-offset-4">
-
-    <div>Product: {{product_name}}</div>
-    <div>Brand: {{brand}}</div>
-
-      <!-- LOOP OVER THE TODOS IN $scope.todos -->
-<!--       <div class="checkbox" ng-repeat="ingredient in ingredients">
-
-      <div>{{ingredient}}</div>
-    
-      </div> -->
-=======
 <div class="container">
   <div class="ingredients">
-    <div class="panel panel-default">
-    <!-- Default panel contents -->
-      <div class="panel-heading ingredients-heading">Ingredients</div>
 
->>>>>>> d35959a5e3381ae397bf72a36a6649d40a052f5f
+    <!--&lt;!&ndash; Panel-Collapse &ndash;&gt;-->
+    <!--<div class="panel-group">-->
+      <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+          <!--<h4 class="panel-title">-->
+            <!--<a data-target="#collapse1" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>-->
+          <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapse1" class="panel-collapse collapse">-->
+          <!--<div class="panel-body">Panel Body</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="panel-group">-->
+      <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+          <!--<h4 class="panel-title">-->
+            <!--<a data-target="#collapse2" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>-->
+          <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapse2" class="panel-collapse collapse">-->
+          <!--<div class="panel-body">Panel Body</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="panel-group">-->
+      <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+          <!--<h4 class="panel-title">-->
+            <!--<a data-target="#collapse3" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>-->
+          <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapse3" class="panel-collapse collapse">-->
+          <!--<div class="panel-body">Panel Body</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
 
-      <!-- List group -->
-      <ul class="list-group ingredients-body">
-        <li class="list-group-item" ng-repeat="ingredient in ingredients">{{ingredient}}<span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <!-- <li class="list-group-item">Sucrose <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <li class="list-group-item">Glucose <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <li class="list-group-item">Citric Acid <span class="glyphicon glyphicon-chevron-down pull-right"></span></li>
-        <li class="list-group-item">Taurine <span class="glyphicon glyphicon-chevron-down pull-right"></span></li> -->
-      </ul>
-    </div>
-
-    <!-- Panel-Collapse -->
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-target="#collapse1" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
-          </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse">
-          <div class="panel-body">Panel Body</div>
-        </div>
+    <div class="panel panel-default" ng-repeat="element in ingredients">
+      <div class="panel-heading">{{element.name}}
+        <button ng-click="element.isCollapsed = !element.isCollapsed">Toggle</button>
       </div>
-    </div>
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-target="#collapse2" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
-          </h4>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-          <div class="panel-body">Panel Body</div>
-        </div>
-      </div>
-    </div>
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-target="#collapse3" data-toggle="collapse" href="">Collapsible panel test <span class="glyphicon glyphicon-chevron-down pull-right"></a>
-          </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse">
-          <div class="panel-body">Panel Body</div>
-        </div>
+      <div collapse="element.isCollapsed">
+        <div ng-show="!element.isCollapsed" class="panel-body" style="color:black">{{element.description.def}}</div>
       </div>
     </div>
 

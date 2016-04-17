@@ -5,6 +5,17 @@ function mainController($scope, $http, $location) {
     $scope.formData = {};
     //var upc = 611269357011;
 
+    $scope.elements = [{
+        name: 'one',
+        isCollapsed: true
+    }, {
+        name: 'two',
+        isCollapsed: true
+    }, {
+        name: 'three',
+        isCollapsed: true
+    }];
+
     var absUrl = $location.absUrl();
     console.log(absUrl);
     var productCodeArray = absUrl.split("/");
@@ -20,7 +31,17 @@ function mainController($scope, $http, $location) {
             $scope.category = data.category;
             $scope.product_name = data.product_name;
             $scope.brand = data.brand;
-            $scope.ingredients = data.ingredients; 
+            //$scope.ingredients = [];
+            var panelIngredients = [];
+            for (var i = 0, len = data.ingredients.length; i< len; i++) {
+                panelIngredients.push( {
+                    name: data.ingredients[i],
+                    isCollapsed: true,
+                    description: data.ingredientToInfoMapping.data[data.ingredients[i]]
+                });
+            }
+            $scope.ingredients = panelIngredients;
+            console.log(data.ingredientToInfoMapping);
         })
         .error(function(data) {
             console.log('Error: ' + data);
