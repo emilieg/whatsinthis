@@ -14,5 +14,9 @@ exports.data = {
     "citric acid": {
       def: "Mild acid derived from citris fruit, used as preservative",
       moreinfo: null
+    },
+    "Alcohol" : {
+        def: " lol",
+        moreinfo: null
     }
   }

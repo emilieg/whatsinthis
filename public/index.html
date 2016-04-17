@@ -40,7 +40,6 @@
   </div>
 
 
-
   <div>Category: {{category}}</div>
 
   <!-- TODO LIST -->
@@ -50,34 +49,19 @@
       <div>Product: {{product_name}}</div>
       <div>Brand: {{brand}}</div>
 
-      <!-- LOOP OVER THE TODOS IN $scope.todos -->
-<!--       <div class="checkbox" ng-repeat="ingredient in ingredients">
-
-<div>{{ingredient}}</div>
-
-</div> -->
-
 <div class="container">
   <div class="ingredients">
-    <div class="panel panel-default">
-      <!-- Default panel contents -->
-      <div class="panel-heading ingredients-heading">Ingredients</div>
 
 
-      <!-- Panel-Collapse -->
-      <div class="panel-group" >
-        <div class="panel panel-default" ng-repeat="ingredient in ingredients">
-          <div class="panel-heading">
-            <h4 class="panel-title" >
-              <a data-target="#collapse1" data-toggle="{{ingredient}}" href="">{{ingredient}} <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-            </h4>
-          </div>
-          <div class="panel-collapse {{ingredient}}">
-            <div class="panel-body">Panel Body </div>
-
-          </div>
-        </div>
+    <div class="panel panel-default" ng-repeat="element in ingredients">
+      <div class="panel-heading">{{element.name}}
+        <span class="glyphicon glyphicon-chevron-down pull-right" ng-click="element.isCollapsed = !element.isCollapsed"></span>
       </div>
+      <div collapse="element.isCollapsed">
+        <div ng-show="!element.isCollapsed" class="panel-body" style="color:black">{{element.description.def}}</div>
+      </div>
+    </div>
+
 
 
     </div>
