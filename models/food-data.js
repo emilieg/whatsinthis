@@ -12,7 +12,7 @@ exports.data = {
     def: "Sugar obtained from plants or fruits",
     moreinfo: null
   },
-  "Sodium citrate": {
+  "Sodium Citrate": {
     def: "Weak acid found in many citrus fruits",
     moreinfo: null
   },
@@ -28,11 +28,11 @@ exports.data = {
       def: "Vitamin B",
       moreinfo: null
   },
-     "Pyridoxine HCL" : {
+     "Pyridoxine Hcl" : {
       def: "Vitamin B6",
       moreinfo: null
   },
-      "Vitamin b12" : {
+      "Vitamin B12" : {
       def: "A vitamin that helps form red blood cells for oxygen formation",
       moreinfo: null
   },
@@ -45,15 +45,15 @@ exports.data = {
       moreinfo: null
   },
      "D-Pantothenol" : {
-      def: "Definition",
+      def: "Vitamin B5",
       moreinfo: null
   },
     "Inositol" : {
-      def: "Definition",
+      def: "Vitamin B8",
       moreinfo: null
   },
     "Glucuronolactone" : {
-      def: "Definition",
+      def: "Chemical produced by the liver through the metabolism of sugar",
       moreinfo: null
   },
 // Dove Deoderant
@@ -125,46 +125,6 @@ exports.data = {
     def: "Definition",
     moreinfo: null
   },
-    "Taurine" : {
-        def: "A colorless crystalline substance obtained from the bile of mammals",
-        moreinfo: null
-    },
-      "Caffeine" : {
-        def: "A natural stimulant derived from plants",
-        moreinfo: null
-    },
-      "Niacin" : {
-        def: "Vitamin B",
-        moreinfo: null
-    },
-       "Pyridoxine HCL" : {
-        def: "Vitamin B6",
-        moreinfo: null
-    },
-        "Vitamin b12" : {
-        def: "A vitamin that helps form red blood cells for oxygen formation",
-        moreinfo: null
-    },
-        "Artificial Flavors" : {
-        def: "Natural substances derived from animals or plants, and artificially created flavors",
-        moreinfo: null
-    },
-        "Colors" : {
-        def: "Dyes or pigments added to provide color",
-        moreinfo: null
-    },
-       "D-Pantothenol" : {
-        def: "Definition",
-        moreinfo: null
-    },
-      "Inositol" : {
-        def: "Definition",
-        moreinfo: null
-    },
-      "Glucuronolactone" : {
-        def: "Definition",
-        moreinfo: null
-    },
     "Caramel Color" : {
         def: "Definition",
         moreinfo: null
@@ -186,10 +146,6 @@ exports.data = {
         moreinfo: null
     },
     "Citric Acid" : {
-        def: "Definition",
-        moreinfo: null
-    },
-    "Caffeine": {
         def: "Definition",
         moreinfo: null
     },
