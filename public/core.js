@@ -15,8 +15,12 @@ function mainController($scope, $http, $location) {
     // when landing on the page, get all todos and show them
     $http.get('/api?id=' + productCode)
         .success(function(data) {
-            $scope.todos = data;
+            // $scope.todos = data;
             console.log(data);
+            $scope.category = data.category;
+            $scope.product_name = data.product_name;
+            $scope.brand = data.brand;
+            $scope.ingredients = data.ingredients; 
         })
         .error(function(data) {
             console.log('Error: ' + data);
