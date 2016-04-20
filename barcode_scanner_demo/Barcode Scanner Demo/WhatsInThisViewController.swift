@@ -23,7 +23,8 @@ class WhatsInThisViewController: UIViewController {
 
         productCodeLabel.text = productCode
 //        let urlString = "https://ancient-springs-86295.herokuapp.com/" + productCode
-        let urlString = "http://52.86.216.169:3000/" + productCode
+//        let urlString = "http://52.86.216.169:3000/" + productCode
+        let urlString = "https://floating-hollows-18174.herokuapp.com/" + productCode
         print("my url string" + urlString)
         let url = NSURL (string: urlString)
         let requestObj = NSURLRequest(URL: url!);
